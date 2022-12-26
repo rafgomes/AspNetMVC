@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    Aluno aluno = ViewBag.aluno;
+    
+
+}
+
+<h1>Pagina De Aluno</h1>
+<p>ID: @aluno.Id </p>
+<p>Nome: @aluno.Nome </p>
+<p>Matricula: @aluno.Matricula</p>
+<p>Situação: @aluno.Situacao</p>
+
+@*@foreach (Aluno item in ViewBag.ListaAlunos)
+{
+    <p>@item.Nome</p>
+}*@
+
+
